@@ -1,0 +1,28 @@
+{
+	"name": "microblog-server",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Push Notification for ToDo android app",
+  "dependencies": {
+    "mongoose": "*",
+    "node-gcm": "*",
+    "lodash": "*",
+    "apn": "*",
+    "express": "*",
+    "commander": "*",
+    "jshint": "*"
+  },
+  "bin": {
+    "pushserver": "./bin/pushserver.js"
+  },
+  "main": "./lib/PushController.js",
+  "scripts": {
+  "start": "node ./bin/pushserver.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/RockyNiu/todo-server.git"
+  },
+  "bugs": "https://github.com/RockyNiu/todo-server/issues"
+}
