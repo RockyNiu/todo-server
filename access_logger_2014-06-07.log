@@ -1,0 +1,4 @@
+192.168.1.6 - - [Sat, 07 Jun 2014 05:25:56 GMT] "GET /user HTTP/1.1" 200 23 "-" "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0"
+192.168.1.6 - - [Sat, 07 Jun 2014 05:26:01 GMT] "GET / HTTP/1.1" 500 - "-" "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0"
+192.168.1.6 - - [Sat, 07 Jun 2014 05:28:30 GMT] "GET / HTTP/1.1" 200 206 "-" "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0"
+192.168.1.6 - - [Sat, 07 Jun 2014 05:28:30 GMT] "GET /stylesheets/style.css HTTP/1.1" 200 117 "http://192.168.1.6:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0"
