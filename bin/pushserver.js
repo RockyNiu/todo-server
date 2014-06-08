@@ -4,14 +4,14 @@
  */
 
 // logger
-var fs = require('fs');
-var date = (new Date()).toISOString().substring(0,10);
-var accessLogfile = fs.createWriteStream('./log/access_logger_' + date + '.log', {
-	flags : 'a'
-});
-var errorLogfile = fs.createWriteStream('./log/error_logger_' + date + '.log', {
-	flags : 'a'
-});
+//var fs = require('fs');
+//var date = (new Date()).toISOString().substring(0,10);
+//var accessLogfile = fs.createWriteStream('./log/access_logger_' + date + '.log', {
+//	flags : 'a'
+//});
+//var errorLogfile = fs.createWriteStream('./log/error_logger_' + date + '.log', {
+//	flags : 'a'
+//});
 //accessLogfile.on('open');
 //errorLogFile.on('open');
 //var logger = require('morgan');
@@ -33,16 +33,16 @@ if (configPath) {
     if (!fs.existsSync(configPath)) {
     		var meta = '[' + (new Date()).toISOString()+ ']:The configuration file doesn\'t exist.';
         console.log(meta);
-        errorLogfile.write(meta);
+//        errorLogfile.write(meta);
         return program.outputHelp();
     }
 } else {
 		var meta = '[' + (new Date()).toISOString()+ ']:You must provide a configuration file.';
 		console.log(meta);
-		errorLogfile.write(meta);
+//		errorLogfile.write(meta);
     return program.outputHelp();
 }
 
 config.initialize(configPath);
-accessLogfile.write('[' + (new Date()).toISOString()+ ']:todo-server start...');
+console.log('[' + (new Date()).toISOString()+ ']:todo-server start...');
 web.start();
