@@ -1,10 +1,10 @@
 {
     "webPort": 8000,
 
-    "mongodbUrl": "mongodb://localhost/todo",
+    "mongodbUrl": "mongodb://user:pwd@localhost/todo",
 
     "gcm": {
-        "apiKey": "AIzaSyDvGE7tA37H_X5nGDaOobQ2KyQRwvGeXMo"
+        "apiKey": "AIzaSyAPZhHK0SRdK63uIMhqeC5S7RIOx9VMdWI"
     },
 
     "apn": {
